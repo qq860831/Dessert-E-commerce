@@ -138,11 +138,19 @@ $spacers: () !default;
 $spacers: map-merge(
   (
     0: 0,
-    1: ($spacer * .25),
-    2: ($spacer * .5),
-    3: $spacer,
-    4: ($spacer * 1.5),
-    5: ($spacer * 3)
+    // 1: ($spacer * .25),
+    // 2: ($spacer * .5),
+    // 3: $spacer,
+    // 4: ($spacer * 1.5),
+    // 5: ($spacer * 3)
+    1: 5px,
+    2: 10px,
+    3: 15px,
+    4: 20px,
+    5: 30px,
+    6: 50px,
+    7: 60px,
+    8: 75px
   ),
   $spacers
 );
@@ -237,7 +245,7 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               .25rem !default;
+$border-radius:               0;//.25rem !default;
 $border-radius-lg:            .3rem !default;
 $border-radius-sm:            .2rem !default;
 
@@ -714,10 +722,10 @@ $nav-divider-margin-y:              $spacer / 2 !default;
 
 // Navbar
 
-$navbar-padding-y:                  $spacer / 2 !default;
+$navbar-padding-y:                  30px //$spacer / 2 !default;
 $navbar-padding-x:                  $spacer !default;
 
-$navbar-nav-link-padding-x:         .5rem !default;
+$navbar-nav-link-padding-x:         30px //.5rem !default;
 
 $navbar-brand-font-size:            $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
